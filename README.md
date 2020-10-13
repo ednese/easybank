@@ -1,6 +1,6 @@
 # Easybank: [View the Website here](https://ednese.github.io/easybank/)
 
-## ![](design/desktop-preview.png)
+## ![](design/desktop-preview.jpg)
 
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
