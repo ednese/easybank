@@ -2,7 +2,7 @@
 
 ## ![](design/desktop-preview.jpg)
 
-Easybank is a site whose layout and elements are provided by frontendMentor. I coded it under React with html, css and js to create this site.
+Easybank is a site whose layout and elements are provided by Frontend Mentor. I coded it under React with html, css and js to create this site.
 
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
