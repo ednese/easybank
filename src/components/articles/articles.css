@@ -1,0 +1,99 @@
+.Articles {
+    padding: 6em 0;
+    background: rgb(248, 248, 248);
+}
+.articles__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.articles__inner__title {
+    align-self: flex-start;
+    margin: 0 200px 60px;
+    font-size: 2.8em;
+}
+.articles__inner__box {
+    display: grid;
+    row-gap: 5rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 50px 0 200px;
+    max-width: 110em;
+}
+.articles__inner__box .article {
+    display: grid;
+    position: relative;
+    bottom: 0;
+    border-radius: 5px;
+    grid-template-rows: 15rem;
+    border-radius: 10px;
+    background-color: white;
+    transition: ease-in-out .1s;
+}
+.articles__inner__box .article:hover {
+    bottom: 10px;
+    color: yellowgreen;
+    background-color: rgb(240, 240, 240);
+}
+.articles__inner__box .article__image {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100%;
+}
+.article__txt {
+    padding: 1.7em 1.3em;
+    display: grid;
+    row-gap: .5em;
+}
+.articles__inner__box .article__txt__author {
+    font-size: 12px;
+    color: #9698a6;
+    font-weight: 400;
+}
+.articles__inner__box .article__txt__title {
+    font-size: 18px;
+}
+.articles__inner__box .article__txt__paragraph {
+    font-size: 14px;
+}
+@media screen and (max-width: 1300px) {
+    .articles__inner__title {
+        margin: 0 100px 60px;
+        font-size: 40px;
+    }
+    .articles__inner__box {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .articles__inner__box {
+        max-width: 40em;
+        margin: 0 50px 0 100px;
+    }
+    .articles__inner__box .article {
+        grid-template-rows: 10rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .articles__inner__title {
+        align-self: center;
+        margin: 0 0 60px;
+    }
+    .articles__inner__box {
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .articles__inner__title {
+        font-size: 30px;
+    }
+    .articles__inner__box {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .articles__inner__box {
+        margin: 0 20px;
+        max-width: 15em;
+    }
+    .articles__inner__box .article__txt__paragraph {
+        font-size: 12px;
+    }
+}
